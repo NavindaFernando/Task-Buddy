@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateNewAccountFormController">
+   <children>
+      <Label layoutX="25.0" layoutY="77.0" text="User name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="24.0" layoutY="100.0" prefHeight="32.0" prefWidth="236.0" promptText="Enter user name" />
+      <Label layoutX="25.0" layoutY="267.0" text="Confirm Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtConfirmPassword" layoutX="25.0" layoutY="290.0" prefHeight="32.0" prefWidth="236.0" promptText="Confirm password" />
+      <Button fx:id="btnRegister" layoutX="24.0" layoutY="352.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="32.0" prefWidth="236.0" style="-fx-background-color: green;" text="Register" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="25.0" layoutY="140.0" text="Email">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="24.0" layoutY="163.0" prefHeight="32.0" prefWidth="236.0" promptText="Enter email" />
+      <Label layoutX="25.0" layoutY="203.0" text="New Password">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtNewPassword" layoutX="25.0" layoutY="226.0" prefHeight="32.0" prefWidth="236.0" promptText="Enter new password" />
+      <Label fx:id="lblPasswordNotMatch1" layoutX="153.0" layoutY="258.0" text="Password doesn't match" textFill="#ff1e1e">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPasswordNotMatch2" layoutX="153.0" layoutY="322.0" text="Password doesn't match" textFill="#ff1e1e">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Button layoutX="135.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnAddNewUserOnAction" prefHeight="32.0" prefWidth="125.0" style="-fx-background-color: green;" text="Add new user" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblId" layoutX="219.0" layoutY="49.0" text="User id">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
